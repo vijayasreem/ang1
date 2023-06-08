@@ -1,0 +1,24 @@
+﻿·      The feature should be documented and released to the production environment.
+
+<form [formGroup]="configureGithubForm" (ngSubmit)="onSubmit()">
+  <div>
+    <label>GitHub Username:</label>
+    <input type="text" formControlName="gitHubUsername" />
+  </div>
+  <div>
+    <label>GitHub Password:</label>
+    <input type="password" formControlName="gitHubPassword" />
+  </div>
+  <div>
+    <label>GitHub URL:</label>
+    <input type="text" formControlName="gitHubUrl" />
+  </div>
+  <div>
+    <label>GitHub Repository Name:</label>
+    <input type="text" formControlName="gitHubRepoName" />
+  </div>
+  <div>
+    <button type="submit">Save</button>
+    <button type="reset">Reset</button>
+  </div>
+</form>
